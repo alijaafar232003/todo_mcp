@@ -1,0 +1,7 @@
+services:
+  type: web 
+  name: fastapi-mcp_todo
+  env: python
+  buildCommand: uv pip install -r requirements.txt 
+  startCommand : fastapi dev main.py
+  plan : free
